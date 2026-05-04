@@ -11,5 +11,17 @@ int main() {
     freopen("q3in.txt", "r", stdin);
     freopen("q3out.txt", "w", stdout);
 
+    // 박선영 3번 문제
+
+    int n;
+
+    printf("100이하의 정수를 입력하세요: ");
+    scanf("%d", &n);
+
+    for (int i = n; i <= 100; i--)
+    {
+        printf("%d\n", i);
+    }
+
     return 0;
 }

@@ -11,5 +11,15 @@ int main() {
     freopen("q4in.txt", "r", stdin);
     freopen("q4out.txt", "w", stdout);
 
+    // 박선영 4번 문제
+
+    char c;
+    scanf("%c", &c);
+
+    for (char i = 'a'; i <= c; i++)
+    {
+        printf("%c", i);
+    }
+
     return 0;
 }

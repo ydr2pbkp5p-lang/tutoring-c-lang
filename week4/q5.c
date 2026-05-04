@@ -11,5 +11,20 @@ int main() {
     freopen("q5in.txt", "r", stdin);
     freopen("q5out.txt", "w", stdout);
 
+    // 박선영 5번 문제
+
+    int n;
+    scanf("%d", &n);
+
+    for (int i = 1; i <= n; i++)
+    {
+        if (i == 3 || i == 6 || i == 9)
+        {
+            printf("X");
+        }
+        else
+        printf("%d", i);
+    }
+
     return 0;
 }

@@ -12,5 +12,16 @@ int main() {
     freopen("q2in.txt", "r", stdin);
     freopen("q2out.txt", "w", stdout);
 
+    // 박선영 2번 문제
+
+    int n, num;
+    scanf("%d", &n);
+
+    for (int i = 0; i < n; i++)
+    {
+        scanf("%d", &num);
+        printf("%d\n", num);
+    }
+
     return 0;
 }

@@ -11,5 +11,17 @@ int main() {
     freopen("q1in.txt", "r", stdin);
     freopen("q1out.txt", "w", stdout);
 
+    // 박선영 1번 문제
+
+    int num;
+
+    while (1)
+    {
+        scanf("%d", &num);
+        if (num == 0)
+            break;
+    }
+    printf("%d\n", num);
+
     return 0;
 }
