@@ -9,20 +9,11 @@ year가 윤년이면 1, 아니라면 0을 반환하는 함수 leap_year을 구�
 이 작업을 n번 반복하면서 함수 leap_year을 호출하여 결과를 출력하라.
 */
 
-
-int leap_year(int year) {
-    if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
+int leap_year(int year)
+{
+    if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))
+    {
         return 1;
-    }
-    return 0;
-}
-
-int main() {
-    int n, year;
-    scanf("%d", &n);
-    for (int i = 0; i < n; i++) {
-        scanf("%d", &year);
-        printf("%d\n", leap_year(year));
     }
     return 0;
 }
@@ -33,5 +24,12 @@ int main()
     freopen("q1in.txt", "r", stdin);
     freopen("q1out.txt", "w", stdout);
 
+    int n, year;
+    scanf("%d", &n);
+    for (int i = 0; i < n; i++)
+    {
+        scanf("%d", &year);
+        printf("%d\n", leap_year(year));
+    }
     return 0;
 }

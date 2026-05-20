@@ -13,28 +13,24 @@
 // #include <stdio.h>
 // #include <stdlib.h>
 
-void solution() {
+void solution()
+{
     printf("%d\n", rand() % 100 + 1);
 }
 
-int main() {
-    int n;
-   
-    scanf("%d", &n);
-    for (int i = 0; i < n; i++) {
-        solution();
-    }
-    return 0;
-}
-
-int main() 
+int main()
 {
     // 파일 입출력 설정
     freopen("q2in.txt", "r", stdin);
     freopen("q2out.txt", "w", stdout);
     srand(42);
 
-    // TODO: 구현하기
+    int n;
 
+    scanf("%d", &n);
+    for (int i = 0; i < n; i++)
+    {
+        solution();
+    }
     return 0;
 }
