@@ -10,9 +10,21 @@
 미리 작성되어 있는 srand() 코드는 수정하지 않는다.
 */
 
-void solution() 
-{
-    // TODO: 구현하기
+// #include <stdio.h>
+// #include <stdlib.h>
+
+void solution() {
+    printf("%d\n", rand() % 100 + 1);
+}
+
+int main() {
+    int n;
+   
+    scanf("%d", &n);
+    for (int i = 0; i < n; i++) {
+        solution();
+    }
+    return 0;
 }
 
 int main() 
